@@ -1,0 +1,206 @@
+body {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+}
+
+.container {
+    width: 607px;
+    height: 100vh;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 12px;
+    /* background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%); */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 60px;
+}
+
+.top-bar input {
+    display: flex;
+    width: 375px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    border-radius: 50px;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #626262;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #ebfffc;
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.weather-img {
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.data-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.element {
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.humidity {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.wind-speed {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.data {
+    font-family: 34px;
+    font-weight: 400;
+}
+
+.text {
+    font-family: 20px;
+    font-weight: 400;
+}
+
+.icon {
+    margin-top: 10px;
+}
+
+.logo {
+    margin-left: 20px;
+    /* Adjust the margin as needed */
+    width: 50px;
+    /* Adjust the width of your logo */
+    height: auto;
+    /* To maintain the aspect ratio */
+}
+
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .temp {
+        font-size: 80px;
+    }
+
+    .location {
+        font-size: 40px;
+    }
+
+    .data-container {
+        flex-direction: column;
+    }
+
+    .element {
+        text-align: center;
+        align-items: center;
+    }
+
+    .top-bar {
+        padding-top: 20px;
+    }
+
+    .top-bar input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .search-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+    }
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    /* Vertical alignment, if needed */
+}
+
+.white-text {
+    color: white;
+    margin-left: 10px;
+    /* Adjust the margin as needed to control the spacing */
+    font-size: 20px;
+    /* Adjust the font size as needed */
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .temp {
+        font-size: 60px;
+    }
+
+    .location {
+        font-size: 30px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .top-bar input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .search-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+    }
+}
